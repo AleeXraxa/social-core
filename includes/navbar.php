@@ -108,12 +108,13 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="nav-links">
         <a href="../pages/feed.php">Feed</a>
         <a href="../pages/profile.php">Profile</a>
+        <a href="../pages/friends.php">Friends</a>
     </div>
 
     <!-- Search -->
-    <form class="search-box">
+    <form class="search-box" method="GET" action="../pages/result.php">
         <span>🔍</span>
-        <input type="text" placeholder="Search">
+        <input type="text" placeholder="Search" name="search">
     </form>
 
     <!-- Right -->
